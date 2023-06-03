@@ -1,0 +1,32 @@
+        
+        h1{
+            font-size:50px; 
+            text-align:center;
+            border-bottom:1px solid grey;
+            margin:0;
+            padding:20px;
+        }
+            /* WEB에 대한 CSS*/
+
+        ol{ 
+            border-right : 1px solid grey;
+            width:80px;
+            margin:0;
+            padding-top: 10px;
+        }
+            /* 목록에 대한 CSS - 좌에 정렬*/
+
+        #grid{
+            display: grid;
+            grid-template-columns: 125px 1fr;
+             }
+
+        #grid ol{
+            padding-left : 33px;
+        }
+
+        @media(max-width : 800px){
+            #grid{display:block;}
+            ol{border-right:none;}
+            h1{border-bottom:none;}
+        }
